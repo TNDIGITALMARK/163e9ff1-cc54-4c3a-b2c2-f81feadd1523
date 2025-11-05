@@ -5,8 +5,11 @@ import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[hsl(var(--navy-blue-dark))] text-white">
-      <div className="container mx-auto px-4 lg:px-8 py-12">
+    <footer className="bg-[hsl(var(--navy-blue-dark))] text-white relative overflow-hidden">
+      {/* Subtle gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 pointer-events-none" />
+
+      <div className="container mx-auto px-4 lg:px-8 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
@@ -132,7 +135,7 @@ export function Footer() {
                 href="https://facebook.com/OTFTowing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[hsl(var(--primary-orange))] transition-colors"
+                className="text-gray-400 hover:text-[hsl(var(--primary-orange))] transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
@@ -141,7 +144,7 @@ export function Footer() {
                 href="https://business.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[hsl(var(--primary-orange))] transition-colors"
+                className="text-gray-400 hover:text-[hsl(var(--primary-orange))] transition-all hover:scale-110"
                 aria-label="Google Business"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

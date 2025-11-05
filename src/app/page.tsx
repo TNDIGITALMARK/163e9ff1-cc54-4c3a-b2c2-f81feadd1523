@@ -35,17 +35,17 @@ export default function HomePage() {
               <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed">
                 Fast Response Times • Licensed & Insured • Serving Greater Indianapolis Area
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-300">
                 <a
                   href="tel:555-8697"
-                  className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-8 py-4 rounded-[var(--radius-button)] font-semibold text-lg hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-lg hover:shadow-xl"
+                  className="button-primary inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-8 py-4 rounded-[var(--radius-button)] font-semibold text-lg hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
                   <Phone className="h-5 w-5" />
                   <span>Call Now</span>
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--navy-blue))] border-2 border-[hsl(var(--navy-blue))] text-white px-8 py-4 rounded-[var(--radius-button)] font-semibold text-lg hover:bg-[hsl(var(--navy-blue-dark))] transition-all"
+                  className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--navy-blue))] border-2 border-[hsl(var(--navy-blue))] text-white px-8 py-4 rounded-[var(--radius-button)] font-semibold text-lg hover:bg-[hsl(var(--navy-blue-dark))] transition-all hover:-translate-y-0.5"
                 >
                   <MessageSquare className="h-5 w-5" />
                   <span>Request a Quote</span>
@@ -69,8 +69,8 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Towing Service */}
-              <div className="bg-white rounded-[var(--radius)] p-8 shadow-card hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6">
+              <div className="bg-white rounded-[var(--radius)] p-8 shadow-card hover-lift animate-fade-in">
+                <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6 transition-transform hover:scale-110">
                   <Truck className="h-8 w-8 text-[hsl(var(--icon-blue))]" />
                 </div>
                 <h3 className="text-2xl font-bold text-[hsl(var(--text-dark))] mb-4">
@@ -81,15 +81,16 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/services#towing"
-                  className="inline-flex items-center text-[hsl(var(--primary-orange))] font-semibold hover:text-[hsl(var(--primary-orange-hover))] transition-colors"
+                  className="inline-flex items-center gap-2 text-[hsl(var(--primary-orange))] font-semibold hover:text-[hsl(var(--primary-orange-hover))] transition-colors group"
                 >
-                  Learn more →
+                  <span>Learn more</span>
+                  <span className="icon-transition">→</span>
                 </Link>
               </div>
 
               {/* Vehicle Transport */}
-              <div className="bg-white rounded-[var(--radius)] p-8 shadow-card hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6">
+              <div className="bg-white rounded-[var(--radius)] p-8 shadow-card hover-lift animate-fade-in animation-delay-100">
+                <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6 transition-transform hover:scale-110">
                   <Car className="h-8 w-8 text-[hsl(var(--icon-blue))]" />
                 </div>
                 <h3 className="text-2xl font-bold text-[hsl(var(--text-dark))] mb-4">
@@ -100,15 +101,16 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/services#transport"
-                  className="inline-flex items-center text-[hsl(var(--primary-orange))] font-semibold hover:text-[hsl(var(--primary-orange-hover))] transition-colors"
+                  className="inline-flex items-center gap-2 text-[hsl(var(--primary-orange))] font-semibold hover:text-[hsl(var(--primary-orange-hover))] transition-colors group"
                 >
-                  Learn more →
+                  <span>Learn more</span>
+                  <span className="icon-transition">→</span>
                 </Link>
               </div>
 
               {/* Roadside Assistance */}
-              <div className="bg-white rounded-[var(--radius)] p-8 shadow-card hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6">
+              <div className="bg-white rounded-[var(--radius)] p-8 shadow-card hover-lift animate-fade-in animation-delay-200">
+                <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6 transition-transform hover:scale-110">
                   <Wrench className="h-8 w-8 text-[hsl(var(--icon-blue))]" />
                 </div>
                 <h3 className="text-2xl font-bold text-[hsl(var(--text-dark))] mb-4">
@@ -119,9 +121,10 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/services#roadside"
-                  className="inline-flex items-center text-[hsl(var(--primary-orange))] font-semibold hover:text-[hsl(var(--primary-orange-hover))] transition-colors"
+                  className="inline-flex items-center gap-2 text-[hsl(var(--primary-orange))] font-semibold hover:text-[hsl(var(--primary-orange-hover))] transition-colors group"
                 >
-                  Learn more →
+                  <span>Learn more</span>
+                  <span className="icon-transition">→</span>
                 </Link>
               </div>
             </div>
@@ -138,8 +141,8 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center mx-auto mb-4">
+              <div className="text-center animate-scale-in">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center mx-auto mb-4 shadow-lg transition-all hover:scale-110 hover:shadow-xl">
                   <Clock className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[hsl(var(--text-dark))] mb-2">
@@ -150,8 +153,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center mx-auto mb-4">
+              <div className="text-center animate-scale-in animation-delay-100">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center mx-auto mb-4 shadow-lg transition-all hover:scale-110 hover:shadow-xl">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[hsl(var(--text-dark))] mb-2">
@@ -162,8 +165,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center mx-auto mb-4">
+              <div className="text-center animate-scale-in animation-delay-200">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center mx-auto mb-4 shadow-lg transition-all hover:scale-110 hover:shadow-xl">
                   <DollarSign className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[hsl(var(--text-dark))] mb-2">

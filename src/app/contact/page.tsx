@@ -71,10 +71,10 @@ export default function ContactPage() {
               {/* Phone */}
               <a
                 href="tel:555-8697"
-                className="bg-white rounded-[var(--radius)] p-6 shadow-card hover:shadow-lg transition-all group"
+                className="bg-white rounded-[var(--radius)] p-6 shadow-card hover-lift animate-fade-in group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-full bg-[hsl(var(--primary-orange))] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -94,10 +94,10 @@ export default function ContactPage() {
               {/* Email */}
               <a
                 href="mailto:dispatch@otftowing.com"
-                className="bg-white rounded-[var(--radius)] p-6 shadow-card hover:shadow-lg transition-all group"
+                className="bg-white rounded-[var(--radius)] p-6 shadow-card hover-lift animate-fade-in animation-delay-100 group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[hsl(var(--icon-blue))] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-full bg-[hsl(var(--icon-blue))] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -115,9 +115,9 @@ export default function ContactPage() {
               </a>
 
               {/* Location */}
-              <div className="bg-white rounded-[var(--radius)] p-6 shadow-card">
+              <div className="bg-white rounded-[var(--radius)] p-6 shadow-card animate-fade-in animation-delay-200">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[hsl(var(--navy-blue))] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[hsl(var(--navy-blue))] flex items-center justify-center flex-shrink-0 shadow-lg">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -260,7 +260,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[hsl(var(--primary-orange))] text-white px-8 py-4 rounded-[var(--radius-button)] font-semibold text-lg hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    className="button-primary w-full bg-[hsl(var(--primary-orange))] text-white px-8 py-4 rounded-[var(--radius-button)] font-semibold text-lg hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-button flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       <>
@@ -277,7 +277,7 @@ export default function ContactPage() {
 
                   {/* Success Message */}
                   {submitMessage && (
-                    <div className="bg-green-50 border border-green-200 rounded-[var(--radius-input)] p-4">
+                    <div className="bg-green-50 border-2 border-green-200 rounded-[var(--radius-input)] p-4 animate-scale-in">
                       <p className="text-green-800 text-sm font-medium">{submitMessage}</p>
                     </div>
                   )}

@@ -8,7 +8,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-sm backdrop-blur-sm bg-white/95">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -50,7 +50,7 @@ export function Header() {
           {/* Desktop Phone CTA */}
           <a
             href="tel:555-8697"
-            className="hidden md:flex items-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button"
+            className="button-primary hidden md:flex items-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button hover:shadow-lg hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" />
             <span>555-TOWS</span>

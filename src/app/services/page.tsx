@@ -29,8 +29,8 @@ export default function ServicesPage() {
             {/* Towing Service */}
             <div id="towing" className="scroll-mt-20 mb-20">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6">
+                <div className="animate-fade-in">
+                  <div className="w-16 h-16 rounded-full bg-[hsl(var(--accent))] flex items-center justify-center mb-6 shadow-lg transition-transform hover:scale-110">
                     <Truck className="h-8 w-8 text-[hsl(var(--icon-blue))]" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--text-dark))] mb-4">
@@ -61,14 +61,14 @@ export default function ServicesPage() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
                       href="tel:555-8697"
-                      className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button"
+                      className="button-primary inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button hover:shadow-lg hover:-translate-y-0.5"
                     >
                       <Phone className="h-5 w-5" />
                       <span>Call Now</span>
                     </a>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center gap-2 border-2 border-[hsl(var(--navy-blue))] text-[hsl(var(--navy-blue))] px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--navy-blue))] hover:text-white transition-all"
+                      className="inline-flex items-center justify-center gap-2 border-2 border-[hsl(var(--navy-blue))] text-[hsl(var(--navy-blue))] px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--navy-blue))] hover:text-white transition-all hover:-translate-y-0.5"
                     >
                       <MessageSquare className="h-5 w-5" />
                       <span>Get a Quote</span>
@@ -128,14 +128,14 @@ export default function ServicesPage() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
                       href="tel:555-8697"
-                      className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button"
+                      className="button-primary inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button hover:shadow-lg hover:-translate-y-0.5"
                     >
                       <Phone className="h-5 w-5" />
                       <span>Call Now</span>
                     </a>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center gap-2 border-2 border-[hsl(var(--navy-blue))] text-[hsl(var(--navy-blue))] px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--navy-blue))] hover:text-white transition-all"
+                      className="inline-flex items-center justify-center gap-2 border-2 border-[hsl(var(--navy-blue))] text-[hsl(var(--navy-blue))] px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--navy-blue))] hover:text-white transition-all hover:-translate-y-0.5"
                     >
                       <MessageSquare className="h-5 w-5" />
                       <span>Get a Quote</span>
@@ -183,14 +183,14 @@ export default function ServicesPage() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
                       href="tel:555-8697"
-                      className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button"
+                      className="button-primary inline-flex items-center justify-center gap-2 bg-[hsl(var(--primary-orange))] text-white px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--primary-orange-hover))] transition-all shadow-button hover:shadow-lg hover:-translate-y-0.5"
                     >
                       <Phone className="h-5 w-5" />
                       <span>Call Now</span>
                     </a>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center gap-2 border-2 border-[hsl(var(--navy-blue))] text-[hsl(var(--navy-blue))] px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--navy-blue))] hover:text-white transition-all"
+                      className="inline-flex items-center justify-center gap-2 border-2 border-[hsl(var(--navy-blue))] text-[hsl(var(--navy-blue))] px-6 py-3 rounded-[var(--radius-button)] font-semibold hover:bg-[hsl(var(--navy-blue))] hover:text-white transition-all hover:-translate-y-0.5"
                     >
                       <MessageSquare className="h-5 w-5" />
                       <span>Get a Quote</span>
