@@ -767,6 +767,49 @@ select,
               0 0 40px hsl(var(--primary-orange) / 0.3);
 }
 
+/* ============================================
+   NEUTRAL TEXT UTILITY CLASSES
+   Alternative to bright blue text styling
+   ============================================ */
+
+/* Neutral icon and text colors that match the design system */
+.text-neutral {
+  color: hsl(var(--text-gray));
+}
+
+.text-neutral-dark {
+  color: hsl(var(--text-dark));
+}
+
+.text-neutral-icon {
+  color: hsl(var(--navy-blue));
+}
+
+/* Maintains the icon visual weight without the bright blue */
+.icon-neutral {
+  color: hsl(var(--navy-blue));
+}
+
+.icon-neutral-muted {
+  color: hsl(var(--text-gray));
+}
+
+.icon-neutral-light {
+  color: hsl(var(--text-gray));
+  opacity: 0.7;
+}
+
+/* For icon containers with neutral styling */
+.icon-container-neutral {
+  background-color: hsl(var(--background-gray));
+  color: hsl(var(--text-dark));
+}
+
+.icon-container-neutral-accent {
+  background-color: hsl(var(--muted));
+  color: hsl(var(--navy-blue));
+}
+
 /* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
   *,
